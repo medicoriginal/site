@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Иванов Иван</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #ddd;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 3px solid #ff0000;
+            margin-bottom: 30px;
+        }
+
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 0;
+            border: 3px solid #ff0000;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #ff0000;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .section {
+            background: #1a1a1a;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(255,0,0,0.2);
+        }
+
+        h2 {
+            color: #ff0000;
+            border-left: 4px solid #ff0000;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 10px 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1em;
+        }
+
+        .fa {
+            color: #ff0000;
+            font-size: 1.3em;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 2px solid #333;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #ff0000;
+            color: #000;
+            padding: 8px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .contacts {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            h1 {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://i.imgur.com/jVmJSOJ.jpeg" alt="pfp" class="photo">
+            <h1>MEDIC</h1>
+            <p>Lua Dev</p>
+        </header>
+
+        <section class="section">
+            <div class="contacts">
+                <div class="contact-item">
+                    <i class="fa fa-github"></i>
+                    <span>github.com/medicoriginal</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="experience-item">
+                <h3>Lua Developer</h3>
+                <div class="date">2022 - настоящее время</div>
+                <p>GLua</p>
+            </div>
+            <div class="experience-item">
+                <h3>Roblox Developer</h3>
+                <div class="date">2021 - настоящее время</div>
+                <p>че писать</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>UwU</h2>
+            <div class="skills">
+                <span class="skill">GLua</span>
+                <span class="skill">Roblox Studio</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
